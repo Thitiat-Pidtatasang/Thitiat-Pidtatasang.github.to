@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap");
+
+:root {
+  --blue: #136a8a;
+  --green: #267871;
+  --white: #fff;
+  --border: #555;
+  --input-background: rgba(119, 136, 153, 0.15);
+  --input-shadow: rgba(119, 136, 153, 0.35);
+  --input-border: #ddd;
+  --shadow-1: rgba(0, 0, 0, 0.25);
+  --shadow-2: rgba(0, 0, 0, 0.15);
+  --loading-bg-1: #c2cfd6;
+  --loading-bg-2: #f0f3f5;
+}
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+
+#go-back-btn {
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    top: 10px; /* Adjust the top distance as needed */
+    left: 10px; /* Adjust the left distance as needed */
+    padding: 10px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #go-back-btn:hover {
+    background-color: var(--blue);
+  }
+
+body {
+    font-family:'Inter', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, var(--blue), var(--green));
+    min-height: 100vh;
+}
+
+hr {
+    width: 500px;
+    background-color: black;
+    border: 0;
+    height: 2px;
+}
+
+#errors {
+    color: coral;
+}
+
+#board {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px var(--shadow-1), 0 5px 10px var(--shadow-2);
+
+}
+
+.tile {
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tile:hover {
+    background-color: var(--green);
+    color: var(--white) ;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: transparent;
+
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected {
+    color: var(--blue);
+}
+
+.number:hover {
+    color: var(--blue);
+}
+
+.tile-start {
+    background-color: var(--input-background);
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
+}
+
