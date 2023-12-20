@@ -18,6 +18,18 @@
     font-family: "Outfit", sans-serif;
 }
 
+main {
+    background-color: var(--white);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    display: grid;
+    position: relative;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 5px var(--shadow-1), 0 5px 10px var(--shadow-2);
+}
+
 #go-back-btn {
     height: 40px;
     width: 80px;
@@ -30,14 +42,36 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
   }
   #go-back-btn:hover {
     background-color: var(--blue);
   }
 
+
+.text h1 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--green);
+    position: relative  ;
+    margin-left: 30px;
+    display: inline;
+}
+
+.text span{
+    text-align: right;
+    position: relative;
+    display: inline;
+    margin-right: 30px;
+    margin-left: 350px;
+    
+}
+
 body {
-    font-family:'Inter', sans-serif;
-    text-align: center;
+    
+    display: grid;
+    place-items: center;
     background: linear-gradient(135deg, var(--blue), var(--green));
     min-height: 100vh;
 }
@@ -51,18 +85,24 @@ hr {
 
 #errors {
     color: coral;
+    margin-left: 320px;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 #board {
-    background: white;
-    padding: 30px;
+    
+    padding: 20px;
     border-radius: 10px;
-    width: 450px;
+    width: 90%;
+    max-width: 450px;
     height: 450px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 0 5px var(--shadow-1), 0 5px 10px var(--shadow-2);
+    flex-wrap: wrap;
+    overflow: hidden;
+    
 
 }
 
@@ -73,24 +113,31 @@ hr {
     font-size: 20px;
     font-weight: bold;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    overflow: hidden;
     
 }
 
 .tile:hover {
     background-color: var(--green);
     color: var(--white) ;
+    cursor: pointer;
 }
 
 #digits {
-    width: 450px;
+    width: 90%;
+    min-width: 50px;
     height: 50px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     border-radius: 10px;
     background: transparent;
+    cursor:pointer;
+    overflow: hidden;
 
 }
 

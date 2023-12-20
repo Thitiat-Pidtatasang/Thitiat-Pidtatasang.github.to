@@ -241,7 +241,7 @@ button {
   pointer-events: none;
 }
 
-.skeleton {
+ .skeleton {
   position: relative;
 }
 
@@ -252,7 +252,7 @@ button {
   border-radius: 0.25rem;
   content: "";
   animation: loading 1s linear infinite alternate;
-}
+} 
 
 @keyframes loading {
   from {
