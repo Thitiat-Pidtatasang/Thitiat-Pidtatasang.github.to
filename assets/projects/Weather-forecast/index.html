@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class = "go-back-btn" id="go-back-btn">Go Back</button>
+    <div class="card">
+        <div class="search">
+            <input id="myInput" type="text" placeholder="enter city name" spellcheck="false">
+            <button id="myBtn">
+                <span class="material-symbols-outlined">travel_explore</span>
+            </button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">44°F</h1>
+            <h2 class="city">Washington</h2>
+            <div class="details">
+                <div class="col">
+                    <span class="material-symbols-outlined">
+                        humidity_percentage
+                        </span>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="material-symbols-outlined">
+                        air
+                        </span>
+                    <div>
+                        <p class="wind">14 mph</p>
+                        <p>Wind Speed</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
+
+
+
