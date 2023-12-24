@@ -103,3 +103,7 @@ h1 {
 textarea.note {
     font-size: 15px;
 }
+
+.material-symbols-outlined {
+    font-size: 120px;
+}
